@@ -1,6 +1,6 @@
 # one-time-value
 
-generate and verify emphemeral key-value pairs
+generate and verify ephemeral key-value pairs
 
 [![Build status](https://travis-ci.org/michaelrhodes/one-time-value.svg?branch=master)](https://travis-ci.org/michaelrhodes/one-time-value)
 
@@ -15,9 +15,9 @@ var otv = require('one-time-value')
 
 // Basic usage
 var value = otv(generator)
-var token = value('key')
-value.verify('key', token) // true
-value.verify('key', token) // false
+var val = value('key')
+value.verify('key', val) // true
+value.verify('key', val) // false
 
 function generator () {
   return Math.random()
@@ -27,10 +27,10 @@ function generator () {
 
 // With TTL (in milliseconds)
 var value = otv(generator, 1000)
-var token = value('key')
+var val = value('key')
 
 setTimeout(function () {
-  value.verify('key', token) // false
+  value.verify('key', val) // false
 }, 1500)
 ```
 
