@@ -28,7 +28,6 @@ setTimeout(function () {
   val = value('key')
   setTimeout(function () {
     assert(!value.verify('key', val), 'Value can’t be verified after expiry')
-    assert('EOT')
   }, 150)
 }, 50)
 

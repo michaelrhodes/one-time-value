@@ -5,9 +5,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "node .test.ci.js"
+    "test": "dexy test"
   },
   "devDependencies": {
-    "console-spy": "^1.0.2"
+    "dexy": "github:michaelrhodes/dexy#1.0.0"
   }
 }
