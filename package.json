@@ -1,0 +1,13 @@
+{
+  "name": "one-time-value",
+  "author": "Michael Rhodes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "node .test.ci.js"
+  },
+  "devDependencies": {
+    "console-spy": "^1.0.2"
+  }
+}
