@@ -1,4 +1,4 @@
-var assert = console.assert.bind(console)
+var assert = require('assert')
 var otv = require('./')
 
 var value, val

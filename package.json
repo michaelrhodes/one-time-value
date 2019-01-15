@@ -3,11 +3,14 @@
   "author": "Michael Rhodes",
   "version": "1.0.0",
   "main": "index.js",
+  "browser": {
+    "assert": "console.assert"
+  },
   "license": "MIT",
   "scripts": {
-    "test": "dexy test"
+    "test": "node test.js"
   },
   "devDependencies": {
-    "dexy": "github:michaelrhodes/dexy#1.0.0"
+    "console.assert": "github:michaelrhodes/console.assert#1.0.0"
   }
 }
