@@ -15,6 +15,7 @@ val = value('key')
 assert(!value.verify('key', value('_')), 'Incorrect value fails verification')
 assert(!value.verify('key'), 'Undefined value fails verification')
 assert(val === value('key'), 'Value doesn’t change after verification failure')
+assert(!value.verify('unknown', val), 'Unknown key fails verification')
 
 // With TTL
 value = otv(generator, 100)
