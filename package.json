@@ -1,7 +1,7 @@
 {
   "name": "one-time-value",
   "author": "Michael Rhodes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "browser": {
     "assert": "console.assert"
