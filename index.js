@@ -8,14 +8,14 @@ function otv (generator, ttl) {
   function value (key) {
     return key != null ? (active(key) ?
       store[key].value :
-      regenerate(key).value) :
+      generate(key).value) :
       null
   }
 
   function verify (key, value) {
     return Boolean(active(key) &&
       store[key].value === value &&
-      regenerate(key))
+      delete store[key])
   }
 
   function active (key) {
@@ -27,7 +27,7 @@ function otv (generator, ttl) {
       (store[key] && store[key].value != null))
   }
 
-  function regenerate (key) {
+  function generate (key) {
     return store[key] = {
       time: Date.now(),
       value: generator()
