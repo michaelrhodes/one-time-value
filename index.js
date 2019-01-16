@@ -3,6 +3,7 @@ module.exports = otv
 function otv (generator, ttl) {
   var store = {}
   value.verify = verify
+  value.expiry = expiry
   return value
 
   function value (key) {
@@ -16,6 +17,13 @@ function otv (generator, ttl) {
     return Boolean(active(key) &&
       store[key].value === value &&
       delete store[key])
+  }
+
+  function expiry (key) {
+    return ttl &&
+      active(key) &&
+      (store[key].time + ttl) ||
+      null
   }
 
   function active (key) {

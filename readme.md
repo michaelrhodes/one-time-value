@@ -29,6 +29,8 @@ function generator () {
 var value = otv(generator, 1000)
 var val = value('key')
 
+value.expiry('key') // timestamp
+
 setTimeout(function () {
   value.verify('key', val) // false
 }, 1500)
