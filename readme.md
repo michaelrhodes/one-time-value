@@ -6,7 +6,7 @@ generate and verify ephemeral key-value pairs
 
 ## install
 ```sh
-npm install michaelrhodes/one-time-value#1.0.0
+npm install michaelrhodes/one-time-value#1.1.0
 ```
 
 ## use
