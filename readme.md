@@ -2,11 +2,11 @@
 
 generate and verify ephemeral key-value pairs
 
-[![Build status](https://travis-ci.org/michaelrhodes/one-time-value.svg?branch=master)](https://travis-ci.org/michaelrhodes/one-time-value)
+[![ci](https://travis-ci.org/michaelrhodes/one-time-value.svg?branch=master)](https://travis-ci.org/michaelrhodes/one-time-value)
 
 ## install
 ```sh
-npm install michaelrhodes/one-time-value#1.1.0
+npm install https://pkg.mkr.sx/one-time-value/1.1.0.tgz
 ```
 
 ## use
