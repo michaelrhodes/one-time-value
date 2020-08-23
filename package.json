@@ -1,13 +1,12 @@
 {
   "name": "one-time-value",
-  "author": "Michael Rhodes",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "main": "index.js",
   "license": "CC0-1.0",
-  "scripts": {
-    "test": "dexy test"
-  },
   "devDependencies": {
     "dexy": "https://pkg.mkr.sx/dexy/1.0.6.tgz"
+  },
+  "scripts": {
+    "test": "dexy test"
   }
 }

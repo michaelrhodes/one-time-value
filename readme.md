@@ -6,7 +6,7 @@ generate and verify ephemeral key-value pairs
 
 ## install
 ```sh
-npm install https://pkg.mkr.sx/one-time-value/1.1.0.tgz
+npm install https://pkg.mkr.sx/one-time-value/2.0.0.tgz
 ```
 
 ## use
